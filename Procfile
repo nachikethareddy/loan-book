@@ -1,1 +1,1 @@
-web: gunicorn first.wsgi:application --log-file -
+web: gunicorn loanbook.wsgi:application --log-file -
