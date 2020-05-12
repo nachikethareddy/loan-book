@@ -10,5 +10,9 @@ def home(request):
 def login(request):
     u=request.POST["username"]
     p=request.POST["password"]
-    
+    url = 'http://loan-book.herokuapp.com/auth/token/login/'
+
+    myobj = {'username': u,'password':p}
+    x = requests.post(url, data = myobj)
+    data=json.loads(x.text)
     return render(request,'a.html')
