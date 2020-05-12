@@ -14,5 +14,5 @@ def login(request):
 
     myobj = {'username': u,'password':p}
     x = requests.post(url, data = myobj)
-    data=json.loads(x.text)
+    data=json.loads(x.json)
     return render(request,'a.html')

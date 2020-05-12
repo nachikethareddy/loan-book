@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'loanbook.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'de7kstimoi2tjn',
+        'USER': 'lmkkicdtwyjlsc',
+        'PASSWORD': '7393bcefa2939fd0eeecc0ceeea3bf0c2c0e9c16a98922414463c66f2abbdc3d',
+        'HOST': 'ec2-35-169-254-43.compute-1.amazonaws.com'
+
     }
 }
 
